@@ -7,10 +7,12 @@
 * Matthieu Ahounou 
 * Mathieu Sellier
 
-## informations utiles
--L'intégralité du site web utilisé autour du projet de jeu se situe dans le dossier Site.
+## Informations utiles
+- L'intégralité du site web utilisé autour du projet de jeu se situe dans le dossier Site.
 
--Le solveur de tableau 5x5 se situe dans le dossier Solveur, pensez à bien lire les commentaires du code
+- Le solveur de tableau 5x5 se situe dans le dossier Solveur, pensez à bien lire les commentaires du code.
 
+## Comment redéployer le jeu sur un autre site ?
+* Télécharger competitif.php, fonction.js, style.css (si vous voulez un affichage potable) et le solveur.
 
-
+ 
