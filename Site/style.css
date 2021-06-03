@@ -1,0 +1,1332 @@
+*{
+    font-family: 'Reggae One', cursive;
+    box-sizing: border-box;
+}
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.titre {
+    text-align: center;
+    background-image: url("images/fond-titre.png");
+    line-height: 300px;
+    color: #F0FEFF;
+    font-size: 50px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Style button darkmode*/
+
+.dark{
+    color: #ffffff;
+    background-color: rgb(24, 23, 23);
+}
+
+.dark #fieldset {
+    color: white;
+}
+
+.dark div.dragdrop{
+    background-color: rgb(24, 23, 23);
+    border: 2px solid white;
+}
+
+.dark div.dragdropCon{
+    border: 2px solid white;
+}
+
+.dark div#case1, .dark div#case2, .dark div#case3, .dark div#case4, .dark div#case5, .dark div#case6, .dark div#case7, .dark div#case8, .dark div#case9, .dark div#res1, .dark div#res2, .dark div#res3, .dark div#res4, .dark div#res5, .dark div#res6, .dark div#res12x2, .dark div#res22x2, .dark div#res32x2, .dark div#res42x2, .dark div#Case1, .dark div#Case2, .dark div#Case3, .dark div#Case4, .dark div#Case5, .dark div#Case6, .dark div#Case7, .dark div#Case8, .dark div#Case9, .dark div#Res1, .dark div#Res2, .dark div#Res3, .dark div#Res4, .dark div#Res5, .dark div#Res6 {
+    background-color: rgb(24, 23, 23);
+    border: 2px solid white;
+}
+
+.dark div#origine, .dark div#origineCon, .dark div#origineop {
+    background-color: rgb(24, 23, 23);
+    border: 2px solid white;
+}
+
+/* Style navbar Accueil */
+#navbar {
+    overflow: hidden;
+    background-color: #55E8F2;
+    display: flex;
+    justify-content: space-around;
+    z-index: 1000;
+}
+
+#navbar a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+    width: 15%;
+    border-bottom: 2px solid transparent;
+}
+
+#navbar a:hover{
+    color: #3DBAC3;
+    border-bottom: 2px solid #3DBAC3;
+}
+
+/* Style bouton */
+
+#navbar button, #navbar1 button {
+    background-color: #55E8F2;
+    margin-top: 18px;
+    margin-bottom: 18px;
+    border-radius: 5px;
+    transition-duration: 1000ms;
+}
+
+#navbar button:hover, #navbar1 button:hover {
+    border-radius: 15px;
+    margin-left: 55px;
+    background-color: #81f0f8;
+    transition-duration: 500ms;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky + .content {
+    padding-top: 65px;
+}
+
+/* Style main page d'accueil */
+
+main {
+    background-color: #F0FEFF;
+    transition-duration: 1s;
+}
+
+main ul li {
+    list-style-type: none;
+}
+
+div#justify {
+    display: flex;
+    justify-content: space-around;
+}
+
+#imageReflexion {
+    /*position: absolute;
+    left: 600px;
+    top: 400px;*/
+    height: 340px;
+    width: 600px;
+}
+
+#mainAccueil h2 {
+    text-decoration: underline;
+}
+
+#mainAccueil h3 {
+    text-decoration: underline;
+}
+/* Style page règle */
+
+.regle{
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Style page région */
+
+#regionH3 {
+    text-align: center;
+}
+
+#mainRegion h2 {
+    text-decoration: underline;
+}
+
+#corse {
+    text-align: center;
+    background-image: url(images/corse.png);
+    background-position-x: center;
+    background-repeat: no-repeat;
+    line-height: 450px;    
+    color: #F0FEFF;
+    font-size: 50px;
+    width: 100%;
+    margin: 0 auto;
+}
+#bretagne {
+    text-align: center;
+    background-image: url(images/bretagne.png);
+    background-position-x: center;
+    background-repeat: no-repeat;
+    line-height: 200px;    
+    color: #F0FEFF;
+    font-size: 50px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#grand-est {
+    text-align: center;
+    background-image: url(images/grand-est.png);
+    background-position-x: center;
+    background-repeat: no-repeat;
+    line-height: 300px;    
+    color: #F0FEFF;
+    font-size: 50px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#Ile-de-France {
+    text-align: center;
+    background-image: url(images/paris.png);
+    background-position-x: center;
+    background-repeat: no-repeat;
+    line-height: 300px;
+    color: #F0FEFF;
+    font-size: 50px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#cvdl {
+    text-align: center;
+    background-image: url(images/centre-val-de-loire.png);
+    background-position-x: center;
+    background-repeat: no-repeat;
+    line-height: 500px;    
+    color: #F0FEFF;
+    font-size: 50px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#occitanie {
+    text-align: center;
+    background-image: url(images/occitanie.png);
+    background-position-x: center;
+    background-repeat: no-repeat;
+    line-height: 500px;    
+    color: #F0FEFF;
+    font-size: 50px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#AuvRhoAlp {
+    text-align: center;
+    background-image: url(images/auvergne-rhone-alpes.png);
+    background-position-x: center;
+    background-repeat: no-repeat;
+    line-height: 500px;    
+    color: #F0FEFF;
+    font-size: 50px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#BourFrancheComte {
+    text-align: center;
+    background-image: url(images/bourfranchecomte.png);
+    background-position-x: center;
+    background-repeat: no-repeat;
+    line-height: 500px;    
+    color: #F0FEFF;
+    font-size: 50px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#nouvelleaquitaine {
+    text-align: center;
+    background-image: url(images/nouvelle-aquitaine.png);
+    background-position-x: center;
+    background-repeat: no-repeat;
+    line-height: 500px;    
+    color: #F0FEFF;
+    font-size: 50px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#Normandie {
+    text-align: center;
+    background-image: url(images/normandie2.png);
+    background-position-x: center;
+    background-repeat: no-repeat;
+    line-height: 500px;    
+    color: #F0FEFF;
+    font-size: 50px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#Hauts-de-France {
+    text-align: center;
+    background-image: url(images/hdf2.png);
+    background-position-x: center;
+    background-repeat: no-repeat;
+    line-height: 500px;    
+    color: #F0FEFF;
+    font-size: 50px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#Pays-de-la-loire {
+    text-align: center;
+    background-image: url(images/pdl2.png);
+    background-position-x: center;
+    background-repeat: no-repeat;
+    line-height: 500px;    
+    color: #F0FEFF;
+    font-size: 50px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#Provence-alpes-cote-dAzur{
+    text-align: center;
+    background-image: url(images/paca2.png);
+    background-position-x: center;
+    background-repeat: no-repeat;
+    line-height: 500px;    
+    color: #F0FEFF;
+    font-size: 50px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+iframe {
+    width: 100%;
+    height: 400px;
+}
+
+/* Styles des formulaires */
+
+#fieldset {
+    border-radius: 6px;
+    border: 2px solid #122430;
+    padding: 15px;
+}
+
+#legend {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.flexrow {
+    margin-bottom: 15px;
+}
+
+label.required::after {
+    content: " (*) ";
+    color: #C00;
+}
+
+input {
+    border: 1px solid #CCC;
+}
+
+input[type="numbre"] {
+    min-width: 250px;
+    max-width: 50%;
+    padding: 8px;
+    display: block;
+}
+
+input:valid {
+    border: 1px solid #0C0;
+    background-color: #C8E6C9;
+}
+
+input:invalid {
+    border: 1px solid #C00;
+    background-color: #FCE4EC;
+}
+
+input[type="search"] {
+    background-color: white;
+    border: 1px solid #DDD;
+    display: inline;
+}
+
+.bouton button {
+    cursor: pointer;
+}
+
+.bouton {
+    color: #FFF;
+    border: 0;
+    border-radius: 8px;
+    padding: 6px 12px;
+    font-size: 1rem;
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    background-color: #0C0;
+}
+
+
+@media screen and (min-width: 768px) {
+
+    .flexrow {
+        display: flex;
+        align-items: center;
+    }
+
+    .flexrow > label {
+        text-align: right;
+        flex-basis: 34%;
+        margin-right: 1%;
+    }
+
+    label[for="addition"],
+    label[for="soustraction"],
+    label[for="multiplication"],
+    label[for="division"] {
+        flex-basis: auto;
+        margin-left: 5px;
+    }
+
+}
+
+/* Style footer */
+
+.footer {
+    background-color: #F0FEFF;
+}
+
+.copyright {
+    background-color: #249ba3;
+    padding: 2px;
+}
+
+.copyright p {
+    text-align: center;
+    background-color: #249ba3;
+}
+
+.copyrighti {
+    background-color: #249ba3;
+}
+
+/* Bouton trop beau */
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.cta {
+    display: flex;
+    padding: 10px 45px;
+    text-decoration: none;
+    font-size: 40px;
+    color: white;
+    background: #55E8F2;
+    transition: 1s;
+    box-shadow: 6px 6px 0 black;
+    transform: skewX(-15deg);
+}
+
+.cta:focus {
+   outline: none; 
+}
+
+.cta:hover {
+    transition: 0.5s;
+    text-decoration: none;
+    color: #0097a1;
+    box-shadow: 10px 10px 0 #0097a1;
+}
+
+.cta span:nth-child(2) {
+    transition: 0.5s;
+    margin-right: 0px;
+}
+
+.cta:hover  span:nth-child(2) {
+    transition: 0.5s;
+    margin-right: 45px;
+}
+
+  span {
+    transform: skewX(15deg) 
+  }
+
+  span:nth-child(2) {
+    width: 20px;
+    margin-left: 30px;
+    position: relative;
+    top: 0%;
+  }
+  
+/**************SVG****************/
+
+path.one {
+    transition: 0.4s;
+    transform: translateX(-60%);
+}
+
+path.two {
+    transition: 0.5s;
+    transform: translateX(-30%);
+}
+
+.cta:hover path.three {
+    animation: color_anim 1s infinite 0.2s;
+}
+
+.cta:hover path.one {
+    transform: translateX(0%);
+    animation: color_anim 1s infinite 0.6s;
+}
+
+.cta:hover path.two {
+    transform: translateX(0%);
+    animation: color_anim 1s infinite 0.4s;
+}
+
+/* SVG animations */
+
+@keyframes color_anim {
+    0% {
+        fill: white;
+    }
+    50% {
+        fill: #0097a1;
+    }
+    100% {
+        fill: white;
+    }
+}
+
+/* Style map */
+
+.map{
+    overflow: hidden;
+}
+.map__image{
+    width: 45%;
+    float: left;
+}
+
+.map__image path{
+    fill: #a4ced2;
+    stroke: #FFF;
+    stroke-width: 1px;
+    transition: fill 0.3s;
+}
+
+.map__image .is-active path{
+    fill: #3629b1;
+}
+
+.map__list{
+    float: right;
+    width: 50%;
+}
+
+.map__list a{
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.map__list a.is-active{
+    color: #3629b1;
+    font-weight: bold;
+}
+
+.map__list a:hover{
+    text-decoration: none;
+}
+
+/* Style jeu dragdrop */
+
+a#deco {
+    position: absolute;
+    top: 75px;
+    left: 1000px;
+}
+
+div.dragdrop {
+    display: inline-block;
+    border: 2px solid #333;
+    border-radius: 4px;
+    cursor: move;
+    background:#fff;
+    line-height: 50px;
+    width: 50px;
+    text-align: center;
+    margin: 3px;
+    transition-duration: 1s;
+}
+
+div.dragdropCon{
+    display: inline-block;
+    border: 2px solid #333;
+    cursor: move;
+    line-height: 47px;
+    border-radius: 30px;
+    background:#55E8F2;
+    width: 50px;    
+    margin: 3px;
+    transition-duration: 1s;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: xx-large;
+}
+
+div.dragdrop:hover{
+    transition-duration: 1s;
+    border-radius: 30px;
+}
+
+div.onDropZone {
+    border: 5px solid #6d6 !important;
+    padding: 4px !important; 
+}
+
+div#games {
+    display:flex;
+    flex-wrap: nowrap;
+    justify-content:space-around;
+    width:100%;
+    margin-bottom: 100px;
+}
+
+div.selectionCon {
+    width: 30%;
+}
+
+div.selection {
+    width:24%;
+}
+
+div.game {
+    width: 800px;
+    float: left;
+    margin-left: 2%;
+}
+
+div.titreGamechiffre {
+    text-align:center;
+    font-weight:bold;
+    font-size:20px;
+    margin-left: 50px;
+    top: 200px;
+    float: left;
+    position: relative;
+    padding:10px;
+}
+
+div.titreGameCon {
+    text-align:center;
+    font-weight:bold;
+    font-size:20px;
+    float: left;
+    margin-left: 20%;
+}
+
+div.titreGame {
+    text-align:center;
+    font-weight:bold;
+    font-size:20px;
+}
+
+div#origine {
+    padding:10px;
+    border:2px solid #000;
+    width:100%;
+    min-height:230px;
+    background:#fff;
+    transition-duration: 1s;
+}
+
+div#origineop {
+    padding:20px;
+    border:2px solid #000;
+    width:100%;
+    min-height:500px;
+    float: left;
+    margin-left: 20%;
+    background:#fff;
+    transition-duration: 1s;
+}
+
+div#origineCon {
+    position: relative;
+    padding:10px;
+    border:2px solid #000;
+    width:82%;
+    min-height:210px;
+    background:#fff;
+    margin-left: 40px;
+    top: 200px;
+    float: left;
+    transition-duration: 1s;
+}
+
+
+div#case1, div#case2, div#case3, div#case4, div#case5, div#case6, div#case7, div#case8, div#case9, div#Case1, div#Case2, div#Case3, div#Case4, div#Case5, div#Case6, div#Case7, div#Case8, div#Case9  {
+    /*display: inline-block;*/
+    height: 60px;
+    border: 2px solid #333;
+    border-radius: 4px;
+    cursor: move;
+    background:#fff;
+    width: 60px;
+    text-align: center;
+    transition-duration: 1s;
+}
+
+div#case1 {
+    position: absolute;
+    top: 300px;
+    left: 500px;
+}
+
+div#case2 {
+    position: absolute;
+    top: 300px;
+    left: 650px;
+}
+
+div#case3 {
+    position: absolute;
+    top: 300px;
+    left: 800px;
+}
+
+div#case4 {
+    position: absolute;
+    top: 450px;
+    left: 500px;
+}
+
+div#case5 {
+    position: absolute;
+    top: 450px;
+    left: 650px;
+}
+
+div#case6 {
+    position: absolute;
+    top: 450px;
+    left: 800px;
+}
+
+div#case7 {
+    position: absolute;
+    top: 600px;
+    left: 500px;
+}
+
+div#case8 {
+    position: absolute;
+    top: 600px;
+    left: 650px;
+}
+
+div#case9 {
+    position: absolute;
+    top: 600px;
+    left: 800px;
+}
+
+div#Case1 {
+    position: relative;
+    top: 210px;
+    left: 140px;
+}
+
+div#Case2 {
+    position: relative;
+    top: 150px;
+    left: 290px;
+}
+
+div#Case3 {
+    position: relative;
+    top: 90px;
+    left: 440px;
+}
+
+div#Case4 {
+    position: relative;
+    top: 180px;
+    left: 140px;
+}
+
+div#Case5 {
+    position: relative;
+    top: 120px;
+    left: 290px;
+}
+
+div#Case6 {
+    position: relative;
+    top: 60px;
+    left: 440px;
+}
+
+div#Case7 {
+    position: relative;
+    top: 150px;
+    left: 140px;
+}
+
+div#Case8 {
+    position: relative;
+    top: 90px;
+    left: 290px;
+}
+
+div#Case9 {
+    position: relative;
+    top: 30px;
+    left: 440px;
+}
+
+div#cases1, div#cases2, div#cases3, div#cases4, div#cases5, div#cases6, div#cases7, div#cases8, div#cases9, div#cases10, div#cases11, div#cases12  {
+    /*display: inline-block;*/
+    height: 60px;
+    border: 2px solid #333;
+    border-radius: 30px;
+    background:#55E8F2;
+    cursor: move;
+    width: 60px;
+    text-align: center;
+    transition-duration: 1s;
+}
+
+div#cases1 {
+    position: relative;
+    top: -330px;
+    left: 215px;
+}
+
+div#cases2 {
+    position: relative;
+    top: -390px;
+    left: 365px;
+}
+
+div#cases3 {
+    position: relative;
+    top: -375px;
+    left: 140px;
+}
+
+div#cases4 {
+    position: relative;
+    top: -435px;
+    left: 290px;
+}
+div#cases5 {
+    position: relative;
+    top: -495px;
+    left: 440px;
+}
+div#cases6 {
+    position: relative;
+    top: -480px;
+    left: 215px;
+}
+
+div#cases7 {
+    position: relative;
+    top: -540px;
+    left: 365px;
+}
+
+div#cases8 {
+    position: relative;
+    top: -525px;
+    left: 140px;
+}
+
+div#cases9 {
+    position: relative;
+    top: -585px;
+    left: 290px;
+}
+div#cases10 {
+    position: relative;
+    top: -645px;
+    left: 440px;
+}
+div#cases11 {
+    position: relative;
+    top: -630px;
+    left: 215px;
+}
+div#cases12 {
+    position: relative;
+    top: -690px;
+    left: 365px;
+}
+
+div#op1, div#op2, div#op3, div#op4, div#op5, div#op6, div#op7, div#op8, div#op9, div#op10, div#op11, div#op12 {
+    line-height: 60px;
+    border-radius: 30px;
+    background:#55E8F2;
+    width: 60px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: xx-large;
+}
+
+div#op1 {
+    position: absolute;
+    top: 300px;
+    left: 575px;
+}
+
+div#op2 {
+    position: absolute;
+    top: 300px;
+    left: 725px;
+}
+
+div#op3 {
+    position: absolute;
+    top: 375px;
+    left: 500px;
+}
+
+div#op4 {
+    position: absolute;
+    top: 375px;
+    left: 650px;
+}
+
+div#op5 {
+    position: absolute;
+    top: 375px;
+    left: 800px;
+}
+
+div#op6 {
+    position: absolute;
+    top: 450px;
+    left: 575px;
+}
+
+div#op7 {
+    position: absolute;
+    top: 450px;
+    left: 725px;
+}
+
+div#op8 {
+    position: absolute;
+    top: 525px;
+    left: 500px;
+}
+
+div#op9 {
+    position: absolute;
+    top: 525px;
+    left: 650px;
+}
+
+div#op10 {
+    position: absolute;
+    top: 525px;
+    left: 800px;
+}
+
+div#op11 {
+    position: absolute;
+    top: 600px;
+    left: 575px;
+}
+
+div#op12 {
+    position: absolute;
+    top: 600px;
+    left: 725px;
+}
+
+div#eg1, div#eg2 ,div#eg3 ,div#eg4 ,div#eg5 ,div#eg6 ,div#eg12x2 ,div#eg22x2 ,div#eg32x2 ,div#eg42x2{
+    line-height: 60px;
+    border-radius: 30px;
+    background:rgb(255, 211, 211);
+    width: 60px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: xx-large;
+}
+
+div#eg1 {
+    position: absolute;
+    top: 300px;
+    left: 875px;
+}
+
+div#eg2 {
+    position: absolute;
+    top: 450px;
+    left: 875px;
+}
+
+div#eg3 {
+    position: absolute;
+    top: 600px;
+    left: 875px;
+}
+
+div#eg4 {
+    position: absolute;
+    top: 675px;
+    left: 500px;
+}
+
+div#eg5 {
+    position: absolute;
+    top: 675px;
+    left: 650px;
+}
+
+div#eg6 {
+    position: absolute;
+    top: 675px;
+    left: 800px;
+}
+
+div#eg12x2 {
+    position: absolute;
+    top: 300px;
+    left: 725px;
+}
+
+div#eg22x2 {
+    position: absolute;
+    top: 450px;
+    left: 725px;
+}
+
+div#eg32x2 {
+    position: absolute;
+    top: 525px;
+    left: 500px;
+}
+
+div#eg42x2 {
+    position: absolute;
+    top: 525px;
+    left: 650px;
+}
+
+div#res1, div#res2, div#res3, div#res4, div#res5, div#res6, div#res12x2, div#res22x2, div#res32x2, div#res42x2 {
+    line-height: 60px;
+    border: 2px solid #333;
+    border-radius: 4px;
+    background:#fff;
+    width: 60px;
+    text-align: center;
+    transition-duration: 1s;
+}
+
+div#res1 {
+    position: absolute;
+    top: 300px;
+    left: 950px;
+}
+
+div#res2 {
+    position: absolute;
+    top: 450px;
+    left: 950px;
+}
+
+div#res3 {
+    position: absolute;
+    top: 600px;
+    left: 950px;
+}
+
+div#res4 {
+    position: absolute;
+    top: 750px;
+    left: 500px;
+}
+
+div#res5 {
+    position: absolute;
+    top: 750px;
+    left: 650px;
+}
+
+div#res6 {
+    position: absolute;
+    top: 750px;
+    left: 800px;
+}
+
+div#res12x2 {
+    position: absolute;
+    top: 300px;
+    left: 800px;
+}
+
+div#res22x2 {
+    position: absolute;
+    top: 450px;
+    left: 800px;
+}
+
+div#res32x2 {
+    position: absolute;
+    top: 600px;
+    left: 500px;
+}
+
+div#res42x2 {
+    position: absolute;
+    top: 600px;
+    left: 650px;
+}
+
+div#Eg1, div#Eg2 ,div#Eg3 ,div#Eg4 ,div#Eg5 ,div#Eg6 {
+    line-height: 60px;
+    border-radius: 30px;
+    background:rgb(255, 211, 211);
+    width: 60px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: xx-large;
+    transition-duration: 1s;
+}
+
+div#Eg1 {
+    position: relative;
+    top: -1050px;
+    left: 515px;
+}
+
+div#Eg2 {
+    position: relative;
+    top: -960px;
+    left: 515px;
+}
+
+div#Eg3 {
+    position: relative;
+    top: -870px;
+    left: 515px;
+}
+
+div#Eg4 {
+    position: relative;
+    top: -860px;
+    left: 440px;
+}
+
+div#Eg5 {
+    position: relative;
+    top: -920px;
+    left: 290px;
+}
+
+div#Eg6 {
+    position: relative;
+    top: -980px;
+    left: 140px;
+}
+
+div#Res1, div#Res2, div#Res3, div#Res4, div#Res5, div#Res6 {
+    line-height: 60px;
+    border: 2px solid #333;
+    border-radius: 4px;
+    background:#fff;
+    width: 60px;
+    text-align: center;
+    transition-duration: 1s;
+}
+
+div#Res1 {
+    position: relative;
+    top: -1410px;
+    left: 590px;
+}
+
+div#Res2 {
+    position: relative;
+    top: -1325px;
+    left: 590px;
+}
+
+div#Res3 {
+    position: relative;
+    top: -1240px;
+    left: 590px;
+}
+
+div#Res4 {
+    position: relative;
+    top: -1160px;
+    left: 140px;
+}
+
+div#Res5 {
+    position: relative;
+    top: -1225px;
+    left: 290px;
+}
+
+div#Res6 {
+    position: relative;
+    top: -1290px;
+    left: 440px;
+}
+
+div#ind1, div#ind2, div#ind3, div#ind4, div#ind5, div#ind6, div#ind7, div#ind8, div#ind9{
+    font-size: small;
+    color: rgb(255, 107, 107);
+}
+
+div#ind1 {
+    position: absolute;
+    top: 360px;
+    left: 485px;
+}
+
+div#ind2 {
+    position: absolute;
+    top: 360px;
+    left: 635px;
+}
+
+div#ind3 {
+    position: absolute;
+    top: 360px;
+    left: 785px;
+}
+
+div#ind4 {
+    position: absolute;
+    top: 510px;
+    left: 485px;
+}
+
+div#ind5 {
+    position: absolute;
+    top: 510px;
+    left: 635px;
+}
+
+div#ind6 {
+    position: absolute;
+    top: 510px;
+    left: 785px;
+}
+
+div#ind7 {
+    position: absolute;
+    top: 660px;
+    left: 485px;
+}
+
+div#ind8 {
+    position: absolute;
+    top: 660px;
+    left: 635px;
+}
+
+div#ind9 {
+    position: absolute;
+    top: 660px;
+    left: 785px;
+}
+
+div#second-counter {
+    position: absolute;
+    top: 535px;
+    left: 80px;
+    line-height: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #55E8F2;
+    border-radius: 20px;
+}
+
+div.boutonGame {
+    cursor:pointer;
+    border:2px solid #0C0;
+    display: inline-block;
+    position: absolute;
+    border-radius:10px;
+    line-height: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+    font-weight:bold;
+    background-color:rgb(215, 255, 215);
+    color:#0C0;
+    transition-duration: 1s;
+    top: 600px;
+    left: 40px;
+}
+
+div.boutonGame:hover {
+    background-color:rgb(140, 255, 140);
+    transition-duration: 1s;
+    line-height: 70px;
+    border-radius: 30px;
+}
+
+div.boutonGameCon {
+    cursor:pointer;
+    border:2px solid #0C0;
+    position: relative;
+    max-height: 60px;
+    border-radius:10px;
+    line-height: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+    font-weight:bold;
+    background-color:rgb(215, 255, 215);
+    color:#0C0;
+    transition-duration: 1s;
+    top: 100px;
+    left: -350px;
+}
+
+div.boutonGameCon:hover {
+    background-color:rgb(140, 255, 140);
+    transition-duration: 1s;
+    /*line-height: 70px;*/
+    border-radius: 30px;
+}
+
+
+div.boutonIndice {
+    cursor:pointer;
+    border:2px solid rgb(2, 112, 2);
+    display: inline-block;
+    position: absolute;
+    border-radius:10px;
+    line-height: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color:rgb(144, 248, 144);
+    color:rgb(2, 112, 2);
+    transition-duration: 1s;
+    top: 545px;
+    left: 90px;
+}
+
+div.boutonIndice:hover {
+    background-color:rgb(140, 255, 140);
+    transition-duration: 1s;
+    line-height: 50px;
+    border-radius: 30px;
+}
