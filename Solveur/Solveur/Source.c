@@ -18,7 +18,7 @@ void displaytab(char tab[taille][taille]) {
 }
 
 /* les données à récupérer doivent se trouver dans un fichier texte dans C:/Users/Administrateur/Downloads/data.txt    ,si vous voulez modifier le chemin, ligne 37*/
-/* sous le format opérateur1,opérateur2,...;solution ligne 1,solution ligne 2;solution colonne 1,solution colonne 2;*/
+/* sous le format opérateur1,opérateur2,...;solution ligne 1,solution ligne 2;solution colonne 1,solution colonne 2,...;*/
 
 /*les données sont renvoyés dans un fichier txt C:/Users/Administrateur/Downloads/Solutions.txt  , si vous voulez le changer, ligne 446*/
 /*sous le format chiffre1,chiffre2,...,*/
@@ -27,11 +27,9 @@ int main() {
 	srand(time(NULL));
 
 	FILE* file;
-	char op[12];
 	char buffer[50] = { "\0" };
 	_set_errno(0);
 	errno_t(err);
-
 
 
 	if (((err = fopen_s(&file, "C:/Users/Administrateur/Downloads/data.txt", "r")) != 0))
@@ -71,7 +69,7 @@ int main() {
 	}
 	p++;
 
-
+	//solutions des lignes
 	k = 0;
 	int q = 0;
 	while (buffer[p] != ';') {
@@ -99,8 +97,7 @@ int main() {
 	p++;
 
 
-
-	//colonne
+	//solutions des colonnes
 	k = 0;
 	q = 0;
 	while (buffer[p] != ';') {
@@ -206,8 +203,8 @@ int main() {
 
 	int i = 0;
 	while (!result) {
+
 		//on récupére les opérateurs sur la ligne (i)
-		printf("\n");
 		k = 0;
 		for (int j = 1; j < taille; j += 2) {
 			opperateur[k] = tableau_prob[i][j];
