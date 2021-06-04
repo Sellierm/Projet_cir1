@@ -13,6 +13,8 @@
 - Le solveur de tableau 5x5 se situe dans le dossier Solveur, pensez à bien lire les commentaires du code.
 
 ## Comment redéployer le jeu sur un autre site ?
-* Télécharger competitif.php, fonction.js, style.css (si vous voulez un affichage potable) et le solveur.
-
+* Téléchargez competitif.php, fonction.js, style.css (si vous voulez un affichage potable) et le solveur.
+* effectuez un téléchargement des données du tableau à partir du .txt sur vôtre site.
+* utilisez le solveur.
+* retrouvez la solution du tableau dans C:/Users/Administrateur/Downloads/Solutions.txt.
  
