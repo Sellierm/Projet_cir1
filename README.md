@@ -16,5 +16,5 @@
 * Téléchargez competitif.php, fonction.js, style.css (si vous voulez un affichage potable) et le solveur.
 * effectuez un téléchargement des données du tableau à partir du .txt sur vôtre site.
 * utilisez le solveur.
-* retrouvez la solution du tableau dans C:/Users/Administrateur/Downloads/Solutions.txt.
+* retrouvez la solution du tableau dans C:/Users/Administrateur/Downloads/Answer.txt.
  
